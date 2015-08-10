@@ -1,3 +1,16 @@
+//Add TODO date for user
+var addTimeStamp = function () {
+  var timeStampBox = document.getElementsByTagName("div")[1];
+  var myTodoDate = document.createElement("span");
+  var d = new Date ();
+
+  timeStampBox.appendChild(myTodoDate);
+  myTodoDate.innerText = d;
+  console.log(d);
+}
+
+addTimeStamp();
+
 //Problem: User interaction doesn't provide desired results
 //Solution: Add interactivity so the user can manage daily tasks.
 
