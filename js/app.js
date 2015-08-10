@@ -169,7 +169,7 @@ var ajaxRequest = function() {
 addButton.addEventListener("click", addTask);
 addButton.addEventListener("click", ajaxRequest);
 
-//Set multiple click handlers to the taskInput field
+//Set press ENTER handler to the taskInput field
 taskInput.addEventListener('keyup', function (event) {
   //check to see if the ENTER key was pressed
   if (event.which === 13) {
@@ -178,7 +178,14 @@ taskInput.addEventListener('keyup', function (event) {
   } 
 });
 
-taskInput.required;
+// //Set press ENTER handler to the editInput field
+// editInput.addEventListener('keyup', function (event) {
+//   //check to see if the ENTER key was pressed
+//   if (event.which === 13) {
+//     //if so, run the editTask function
+//     editTask();
+//   } 
+// });
 
 //cycle over incompleteTasksHolder ul list items
 for(var i = 0; i < incompleteTasksHolder.children.length; i++) {
